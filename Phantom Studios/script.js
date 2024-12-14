@@ -15,7 +15,7 @@ document.querySelector("#main").addEventListener("mousemove",function(dets){
     })
 })
 gsap.to("#Phantom h1",{
-    transform:"translateX(-90%)",
+    transform:"translateX(-100%)",
     scrollTrigger:{
         trigger:"#Phantom",
         scoller:"body",
