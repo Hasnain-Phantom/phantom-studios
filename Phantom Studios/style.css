@@ -62,14 +62,138 @@ video {
   overflow: hidden; 
 }
 
-#cont{
-  height: 100%;
-  margin-top: 10%;
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navbar Styles */
+.navbar {
   display: flex;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-weight: lighter;
-  font-size: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-links a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.work-with-us {
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+}
+
+.work-with-us::after {
+  content: '';
+  display: block;
   width: 100%;
-  padding-left: 30px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 5px;
+}
+
+/* Hero Section */
+.hero {
+  margin: 80px 10%;
+ 
+}
+
+.hero-content h1 {
+  font-size: 7vw;
+  line-height: 0.9;
+  font-weight: bold;
+  margin: 0;
+  line-height: 7vw;
+  margin-top: 11%;
+ 
+}
+.hero-content h1 .hero-line1 span{
+  color: black;
+}
+
+.hero-content h1 .hero-line1{
+  color: orangered;
+  align-items: center;
+  font-size: 7vw;
 
 }
+.hero-content h1 .hero-line2{
+  color: rgb(0, 0, 0);
+  margin-left: 54%;
+
+  
+}
+
+.hero-content h1 .hero-line3{
+  color: rgb(0, 0, 0);
+  align-items: center;
+  margin-left: 34%;
+ 
+}
+
+
+.description {
+  margin: 30px auto;
+  font-size: 1.2em;
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  
+  
+}
+
+.hero-line1 {
+  
+}
+.hero-line2 {
+  display: inline-block;
+}
+.hero-line3 {
+  display: inline-block;
+}
+
+
+
+.scroll-indicator .arrow-down {
+  font-size: 6em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: -60px;
+  margin-left: 170px;
+}
+
+.scroll-indicator helps{
+  font-size: 22px;
+  
+ 
+}
+
