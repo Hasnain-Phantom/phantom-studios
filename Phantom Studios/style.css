@@ -38,37 +38,6 @@ html , body{
 }
 
 
-@keyframes slideInRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-#heading h1 {
-    animation: slideInRight 1.5s ease-out;
-}
-
-#heading h2 {
-    animation: slideInLeft 1.5s ease-out;
-
-}
-
 #nav{
     display: flex;
     justify-content: space-around;
