@@ -1,7 +1,7 @@
 /* CSS file (style.css) */
 @font-face {
     font-family: 'Integral CF';
-    src: url('./fonts/Fontspring-DEMO-integralcf-boldoblique.ttf') format('truetype'); /* Update with the correct path and format */
+    src: url('font/Fontspring-DEMO-integralcf-boldoblique.otf') format('truetype'); /* Update with the correct path and format */
     font-weight: bold;
     font-style: oblique;
   }
@@ -20,57 +20,31 @@ html , body{
 
     
 }
+nav{
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top:0;
 
-#heading h1{
-    font-size: 15em;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    color: #333;
-    letter-spacing: -16px;
-    margin-top: 20%;
-    font-weight: 900;
 }
-#heading h2{
-    font-size: 14em;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    color: #333;
-    /* position: absolute; */
-    margin-top: -6.5%;
-    font-weight: bold;
-    font-weight: 900;
-}
-
-
-#nav{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-.video-container {
-    width: 100%; 
-    max-height: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-  }
+nav #menu{
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px;
+  position: fixed;
+  top:0;
+  right:0;
   
-  video {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    overflow: hidden; 
-  }
-
-  #cont{
-    height: 100%;
-    margin-top: 10%;
-    display: flex;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-weight: lighter;
-    font-size: 30px;
-    width: 100%;
-    padding-left: 30px;
-
-  }
+}
+.menu-item{
+font-weight:600;}
+#phantom-logo{
+  font-size:20px;
+  font-weight: 900;
+}
