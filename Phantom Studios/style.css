@@ -27,14 +27,16 @@ html , body{
     color: #333;
     letter-spacing: -16px;
     margin-top: 20%;
-
+    font-weight: 900;
 }
 #heading h2{
     font-size: 14em;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     color: #333;
     /* position: absolute; */
-    margin-top: -6%;
+    margin-top: -6.5%;
+    font-weight: bold;
+    font-weight: 900;
 }
 
 
