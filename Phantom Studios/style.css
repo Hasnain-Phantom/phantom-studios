@@ -47,3 +47,14 @@ html , body{
     object-fit: cover; 
     overflow: hidden; 
   }
+
+  #cont{
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    padding-left: 30px;
+
+  }
