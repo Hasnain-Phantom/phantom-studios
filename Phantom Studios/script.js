@@ -4,16 +4,15 @@ gsap.from("#phantom-logo",{
     scrollTrigger:{
         trigger:"#logo",
         scroll:"body",
-        start: "top top",
-        end:"top 100%", 
+        start:"top 0",
+        end:"top 100%",
         scrub:1
-    
     }
-})
- 
-gsap.from("#menu",{
+  })
+  
+  gsap.from("#menu",{
    x:-300,
-
+  
     scrollTrigger:{
         trigger:"#logo",
         scroll:"body",
@@ -21,4 +20,5 @@ gsap.from("#menu",{
         end:"top 100%",
         scrub:1
     }
-})
+  })
+  
