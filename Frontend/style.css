@@ -1,5 +1,17 @@
 /* Base CSS Boilerplate */
 /* Reset styles to ensure consistency across browsers */
+/* CSS file (style.css) */
+@font-face {
+  font-family: 'Integral CF';
+  src: url('./fonts/IntegralCF-Regular.ttf') format('truetype'); /* Update the path if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Integral CF', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;

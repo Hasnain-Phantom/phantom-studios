@@ -1,4 +1,15 @@
-*{
+/* CSS file (style.css) */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('./fonts/Fontspring-DEMO-integralcf-boldoblique.ttf') format('truetype'); /* Update with the correct path and format */
+    font-weight: bold;
+    font-style: oblique;
+  }
+  
+  body {
+    font-family: 'Integral CF ', sans-serif;
+  }
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +23,7 @@ html , body{
 
 #heading h1{
     font-size: 15em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     color: #333;
     letter-spacing: -16px;
     margin-top: 20%;
@@ -20,7 +31,7 @@ html , body{
 }
 #heading h2{
     font-size: 14em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     color: #333;
     /* position: absolute; */
     margin-top: -6%;
@@ -31,7 +42,7 @@ html , body{
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .video-container {
@@ -54,7 +65,7 @@ html , body{
     height: 100%;
     margin-top: 10%;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: lighter;
     font-size: 30px;
     width: 100%;
