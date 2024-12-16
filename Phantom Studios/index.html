@@ -13,13 +13,12 @@
 <body>
   <!-- Mobile -->
   <div class="mob sm:block lg:hidden md:hidden xl:hidden">
-    <div class=" fixed top-0 bg-opacity-50  bg-white-500 pt-4">
-      <nav class="flex justify-evenly ">
-        <div id="logo ">Image</div>
-        <div class="menu-icon text-[10px] ">Menu</div>
-      </nav>
+    <div class="right-menu flex gap-8">
+      <div class="side-menu hover:border-b-4 border-black transition-all duration-200 ease-in-out">Work with us
+      </div>
+      <div class="menu-icon hover:border-b-4 border-black transition-all duration-200 ease-in-out">Menu</div>
     </div>
-    <div class="hero-section h-screen w-full text-[50px] font-bold   ">
+    <div class="hero-section h-screen w-full text-[100px] font-bold pt-[100px]  ">
       <div id="phan">PHANTOM </div>
       <div id="studio">STUDIO </div>
     </div>
@@ -28,6 +27,22 @@
   <!-- LAPTOP -->
   <div class="mob md:hidden sm:hidden md:hidden xl:block">
 
+    <div id="click-menu" class="bg-black ">
+      <div id="scrolling-items" class="absolute top-0 left-0 w-full">
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Contact Us</div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">Work
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Method</div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">Learn
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">About
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">Press
+        </div>
+      </div>
+    </div>
     <div class="navbar fixed top-0 bg-opacity-50  bg-white-500 w-full pt-4">
       <nav class="flex justify-around ">
 
@@ -41,8 +56,9 @@
           <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Press</div>
         </div>
         <div class="right-menu flex gap-8">
-          <div class="side-menu">Work with us</div>
-          <div class="menu-icon">Menu</div>
+          <div class="side-menu hover:border-b-4 border-black transition-all duration-200 ease-in-out">Work with us
+          </div>
+          <div  class="menu-icon laptop-menu-icon hover:border-b-4 border-black transition-all duration-200 ease-in-out">Menu</div>
         </div>
       </nav>
     </div>
@@ -59,6 +75,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="gsap.js"></script>
   <script src="script.js"></script>
 </body>
 
