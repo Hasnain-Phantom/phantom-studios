@@ -1,10 +1,20 @@
 
+
+
 var laptop_menu_icon=document.getElementsByClassName("laptop-menu-icon")[0];
 laptop_menu_icon.addEventListener("click",function(){
-    gsap.from("#click-menu",{
-        opacity:0,
-        y:-1000,
+    // document.getElementById("click-menu").style.display="block";
+    gsap.to("#click-menu",{
+        y:0,
         duration:1
     })
-    document.getElementById("click-menu").style.display="block";
+})
+
+var laptop_close_button=document.getElementsByClassName("laptop-close-button")[0];
+laptop_close_button.addEventListener("click",function(){
+    gsap.to("#click-menu",{
+        y:-700,
+        duration:1
+    })
+    // document.getElementById("click-menu").style.display="none";
 })
