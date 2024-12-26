@@ -35,3 +35,11 @@ html , body{
         display: flex;
         flex-direction: column;
     }
+    #cursor{
+      height:50px;
+      width:50px;
+      background-size: cover;
+      position: fixed;
+      z-index: 100;
+  }
+
