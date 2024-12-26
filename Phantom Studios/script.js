@@ -3,6 +3,7 @@
 
 var laptop_menu_icon=document.getElementsByClassName("laptop-menu-icon")[0];
 laptop_menu_icon.addEventListener("click",function(){
+    document.getElementById("nav").style.display="none";
     gsap.to("#click-menu",{
         y:0,
         duration:1
@@ -15,4 +16,7 @@ laptop_close_button.addEventListener("click",function(){
         y:-700,
         duration:1
     })
+    document.getElementById("nav").style.display="block";
+
+
 })
