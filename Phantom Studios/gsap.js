@@ -30,14 +30,14 @@ gsap.from(".menu-icon",{
 var t1=gsap.timeline();
 t1
 .from("#phan", {
-    duration: 1,
-    opacity:0,
-    y:20
+    duration: 2,
+    opacity:-3,
+    y:50
 })
 .from("#studio", {
     duration: 1,
-    opacity:0,
-    y:20
+    opacity:-3,
+    y:40
 
 });
 var t2=gsap.timeline();
@@ -228,7 +228,7 @@ gsap.from("#select", {
         trigger: "#select_work",
         start: "top 70%",
       end: "center 0%",
-      markers:true,
+      markers:false,
       scrub: true
         
     },
@@ -240,8 +240,9 @@ gsap.from("#work", {
         trigger: "#select_work",
         start: "top 70%",
       end: "center 0%",
-      markers:true,
+      markers:false,
       scrub: true
         
     },
 })
+
