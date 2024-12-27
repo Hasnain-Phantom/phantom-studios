@@ -221,3 +221,27 @@ gsap.to(cursor,{
 })
 
 })//
+gsap.from("#select", {
+    opacity:0,
+    x:1200,
+    scrollTrigger: {
+        trigger: "#select_work",
+        start: "top 70%",
+      end: "center 0%",
+      markers:true,
+      scrub: true
+        
+    },
+})
+gsap.from("#work", {
+    opacity:0,
+    x:-1200,
+    scrollTrigger: {
+        trigger: "#select_work",
+        start: "top 70%",
+      end: "center 0%",
+      markers:true,
+      scrub: true
+        
+    },
+})
