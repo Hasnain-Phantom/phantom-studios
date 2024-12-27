@@ -51,6 +51,7 @@ html , body{
   }
 
   #phan{
+    padding-left: 4.5%;
     font-size: 200px;
     font-weight: 800;
     position: absolute;
@@ -60,6 +61,7 @@ html , body{
   }
 
   #studio{
+    padding-left: 4.5%;
     font-size: 200px;
     font-weight: 800;
     position: absolute;
@@ -88,4 +90,21 @@ html , body{
 #select_work{
   /* background-color:rgb(199, 199, 199); */
   height: 110%;
+}
+
+#exp_list{
+  /* background-color: black; */
+  width: 100%;
+  /* background-color: aqua; */
+  position: absolute;
+  left: 38%;
+  
+}
+#main_works{
+  width: 100%;
+  display: flex;
+  padding-left: 4.5%;
+  border-top: 2px solid black;
+  padding-top: 40px;
+
 }
