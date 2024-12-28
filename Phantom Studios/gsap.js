@@ -126,17 +126,16 @@ gsap.from("#work", {
 })
 
 gsap.from("#video", {
-    scale:0,
+    scale: 0,
+    ease: "power1.out", // Adds smooth easing
     scrollTrigger: {
         trigger: "#video_parent",
         start: "top 70%",
-      end: "center 0%",
-      markers:false,
-      scrub: true
-        
+        end: "center 0%",
+        markers: false,
+        scrub: 1, // Smoothly syncs the animation with scrolling
     },
-})
-
+});
 
 ///Mouse hover image 
 var cursor= document.querySelector("#cursor");
