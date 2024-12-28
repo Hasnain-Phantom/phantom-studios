@@ -127,13 +127,13 @@ gsap.from("#work", {
 
 gsap.from("#video", {
     scale: 0,
-    ease: "power1.out", // Adds smooth easing
+    ease: "power1.out", 
     scrollTrigger: {
         trigger: "#video_parent",
         start: "top 70%",
         end: "center 0%",
         markers: false,
-        scrub: 1, // Smoothly syncs the animation with scrolling
+        scrub: 1, 
     },
 });
 
