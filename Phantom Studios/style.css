@@ -71,8 +71,8 @@ html , body{
   }
 
 #select{
-  height: 35%;
-  padding-top: 10%;
+  /* height: 35%;
+  padding-top: 10%; */
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(38, 38, 38);
@@ -80,8 +80,8 @@ html , body{
 }
 
 #work{
-  height: 50%;
-  padding-bottom: 30%;
+  /* height: 50%;
+  padding-bottom: 30%; */
     font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(38, 38, 38);
