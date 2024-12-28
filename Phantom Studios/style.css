@@ -96,30 +96,30 @@ body {
 
 #select_work {
   /* background-color:rgb(199, 199, 199); */
-  height: 110%;
+  height: 100%;
 }
 
 #exp_list {
   /* background-color: black; */
   width: 100%;
   /* background-color: aqua; */
-  position: absolute;
-  left: 38%;
+  /* position: absolute; */
+  /* left: 38%; */
 
 }
 
 #main_works {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  padding-left: 4.5%;
+   padding-left: 4.5%;
+  padding-top: 40px; 
+  margin-bottom: 40px; 
   border-top: 2px solid black;
-  padding-top: 40px;
 
 }
 
 
 .overlays  {
-  
   position: relative;
 }
 

@@ -267,3 +267,130 @@ overlays5.addEventListener("mouseleave",function(){
         scale:0
     })
 })
+gsap.to(".serv",{
+    y:-400,
+    stagger:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#services",
+        scoller:"body",
+        start:"top 0%",
+        end:"top -100%",
+        scrub:1,pin:true
+    }
+})
+
+
+
+document.getElementById("s1").addEventListener("mousemove",function(dets){
+
+    gsap.to(document.getElementById("s1"),{
+       scale:1.3,
+       margin:100, 
+    
+    })
+    gsap.to(document.getElementById("s1_h11"),{
+        rotation: -90
+     })
+     gsap.to(document.getElementById("s1_h12"),{
+        rotation: 90
+     })
+})
+document.getElementById("s1").addEventListener("mouseleave",function(dets){
+    gsap.to(document.getElementById("s1"),{
+        scale:1,
+        margin:0,
+    
+
+ 
+     })
+     gsap.to(document.getElementById("s1_h11"),{
+        rotation: 0
+     })
+     gsap.to(document.getElementById("s1_h12"),{
+        rotation: 0
+     })
+});
+
+document.getElementById("s2").addEventListener("mousemove",function(dets){
+    
+    gsap.to(document.getElementById("s2"),{
+       scale:1.3,
+       margin:100, 
+       y:50
+    })
+    gsap.to(document.getElementById("s2_h11"),{
+        rotation: -90
+     })
+     gsap.to(document.getElementById("s2_h12"),{
+        rotation: 90
+     })
+})
+document.getElementById("s2").addEventListener("mouseleave",function(dets){
+    gsap.to(document.getElementById("s2"),{
+        scale:1,
+        margin:0,
+ 
+     })
+     gsap.to(document.getElementById("s2_h11"),{
+        rotation: 0
+     })
+     gsap.to(document.getElementById("s2_h12"),{
+        rotation: 0
+     })
+});
+
+document.getElementById("s3").addEventListener("mousemove",function(dets){
+    
+    gsap.to(document.getElementById("s3"),{
+       scale:1.3,
+       margin:100, 
+       y:50
+    })
+    gsap.to(document.getElementById("s3_h11"),{
+        rotation: -90
+     })
+     gsap.to(document.getElementById("s3_h12"),{
+        rotation: 90
+     })
+})
+document.getElementById("s3").addEventListener("mouseleave",function(dets){
+    gsap.to(document.getElementById("s3"),{
+        scale:1,
+        margin:0,
+ 
+     })
+     gsap.to(document.getElementById("s3_h11"),{
+        rotation: 0
+     })
+     gsap.to(document.getElementById("s3_h12"),{
+        rotation: 0
+     })
+});
+document.getElementById("s4").addEventListener("mousemove",function(dets){
+    
+    gsap.to(document.getElementById("s4"),{
+       scale:1.3,
+       margin:100, 
+       y:50
+    })
+    gsap.to(document.getElementById("s4_h11"),{
+        rotation: -90
+     })
+     gsap.to(document.getElementById("s4_h12"),{
+        rotation: 90
+     })
+})
+document.getElementById("s4").addEventListener("mouseleave",function(dets){
+    gsap.to(document.getElementById("s4"),{
+        scale:1,
+        margin:0,
+ 
+     })
+     gsap.to(document.getElementById("s4_h11"),{
+        rotation: 0
+     })
+     gsap.to(document.getElementById("s4_h12"),{
+        rotation: 0
+     })
+});
