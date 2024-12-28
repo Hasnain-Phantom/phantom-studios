@@ -42,6 +42,7 @@ t1
 });
 var t2=gsap.timeline();
 t2
+
 .from("#list1", {
     opacity:0,
     x:400,
@@ -99,128 +100,6 @@ t2
 })
 
 
-var list1= document.querySelector("#list1");
-var list2= document.querySelector("#list2");
-var list3= document.querySelector("#list3");
-var list4= document.querySelector("#list4");
-var list5= document.querySelector("#list5");
-var cursor= document.querySelector("#cursor");
-//for First exp name
-
-list1.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:0.5,
-        ease:"back.out"
-    })
-})
-list1.addEventListener("mouseenter",function(){
-    gsap.to(cursor,{
-        scale:5
-    })
-    cursor.style.backgroundImage = "url('media/img2.jpg')";
-})
-list1.addEventListener("mouseleave",function(){
-    cursor.innerHTML=""
-gsap.to(cursor,{
-    scale:0
-})
-cursor.style.backgroundImage = "url('')";
-
-})
-//
-
-list2.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:0.5,
-        backgroundColor:"red",
-        ease:"back.out"
-    })
-})
-list2.addEventListener("mouseenter",function(){
-    gsap.to(cursor,{
-        scale:5
-    })
-    // cursor.style.backgroundImage = "url('media/img2.jpg')";
-})
-list2.addEventListener("mouseleave",function(){
-    cursor.innerHTML="2"
-gsap.to(cursor,{
-    scale:0
-})
-})
-//
-
-list3.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:0.5,
-        ease:"back.out"
-    })
-})
-list3.addEventListener("mouseenter",function(){
-    gsap.to(cursor,{
-        scale:5
-    })
-    // cursor.style.backgroundImage = "url('media/img2.jpg')";
-})
-list3.addEventListener("mouseleave",function(){
-    cursor.innerHTML="3"
-gsap.to(cursor,{
-    scale:0
-})
-
-})
-//
-
-list4.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:0.5,
-        ease:"back.out"
-    })
-})
-list4.addEventListener("mouseenter",function(){
-    gsap.to(cursor,{
-        scale:5
-    })
-    // cursor.style.backgroundImage = "url('media/img2.jpg')";
-})
-list4.addEventListener("mouseleave",function(){
-    cursor.innerHTML="4"
-gsap.to(cursor,{
-    scale:0
-})
-
-})//
-
-
-list5.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        duration:0.5,
-        ease:"back.out"
-    })
-})
-list5.addEventListener("mouseenter",function(){
-    gsap.to(cursor,{
-        scale:5
-    })
-    // cursor.style.backgroundImage = "url('media/img2.jpg')";
-})
-list5.addEventListener("mouseleave",function(){
-    cursor.innerHTML="5"
-gsap.to(cursor,{
-    scale:0
-})
-
-})//
 gsap.from("#select", {
     opacity:0,
     x:1200,
@@ -246,3 +125,146 @@ gsap.from("#work", {
     },
 })
 
+gsap.from("#video", {
+    scale:0,
+    scrollTrigger: {
+        trigger: "#video_parent",
+        start: "top 70%",
+      end: "center 0%",
+      markers:false,
+      scrub: true
+        
+    },
+})
+
+
+///Mouse hover image 
+var cursor= document.querySelector("#cursor");
+var main1= document.querySelector("#main1");
+var overlays1= document.querySelector(".overlays1");
+
+var main2= document.querySelector("#main2");
+var overlays2= document.querySelector(".overlays2");
+
+var main3= document.querySelector("#main3");
+var overlays3= document.querySelector(".overlays3");
+
+var main4= document.querySelector("#main4");
+var overlays4= document.querySelector(".overlays4");
+
+var main5= document.querySelector("#main5");
+var overlays5= document.querySelector(".overlays5");
+
+main1.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        backgroundColor:"yellow",
+        ease:"back.out"
+    })
+})
+overlays1.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:5
+    })
+      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+})
+overlays1.addEventListener("mouseleave",function(){
+        cursor.innerHTML=""
+    gsap.to(cursor,{
+        scale:0
+    })
+})
+
+
+main2.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        backgroundColor:"red",
+        ease:"back.out"
+    })
+})
+overlays2.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:5
+    })
+      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+})
+overlays2.addEventListener("mouseleave",function(){
+        cursor.innerHTML=""
+    gsap.to(cursor,{
+        scale:0
+    })
+})
+
+
+main3.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        backgroundColor:"yellow",
+        ease:"back.out"
+    })
+})
+overlays3.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:5
+    })
+      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+})
+overlays3.addEventListener("mouseleave",function(){
+        cursor.innerHTML=""
+    gsap.to(cursor,{
+        scale:0
+    })
+})
+
+
+main4.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        backgroundColor:"red",
+        ease:"back.out"
+    })
+})
+overlays4.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:5
+    })
+      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+})
+overlays4.addEventListener("mouseleave",function(){
+        cursor.innerHTML=""
+    gsap.to(cursor,{
+        scale:0
+    })
+})
+
+
+main5.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        backgroundColor:"yellow",
+        ease:"back.out"
+    })
+})
+overlays5.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:5
+    })
+      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+})
+overlays5.addEventListener("mouseleave",function(){
+        cursor.innerHTML=""
+    gsap.to(cursor,{
+        scale:0
+    })
+})

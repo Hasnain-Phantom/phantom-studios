@@ -1,110 +1,132 @@
 @font-face {
   font-family: 'Integral CF';
-  src: url('./fonts/Fontspring-DEMO-integralcf-boldoblique.ttf') format('truetype'); /* Update with the correct path and format */
+  src: url('./fonts/Fontspring-DEMO-integralcf-boldoblique.ttf') format('truetype');
+  /* Update with the correct path and format */
   font-weight: bold;
   font-style: oblique;
 }
 
 body {
   font-family: 'Integral CF ', sans-serif;
-  overflow-x:hidden;
+  overflow-x: hidden;
 
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html , body{
+
+html,
+body {
   height: 100%;
   width: 100%;
 
-  
+
 }
-  #click-menu {
-         height: 100vh;
-         width: 100vw;
-         /* display:none; */
-        overflow-y: scroll; 
-         scroll-behavior: smooth; 
-        position:fixed;
-        top:0;
-        z-index: 10;
-        transform: translateY(-700px);
-        background-color: rgb(38, 38, 38);
-    }
 
-    #scrolling-items {
-        display: flex;
-        flex-direction: column;
-    }
-    #cursor{
-      height:50px;
-      width:50px;
-      background-size: cover;
-      position: fixed;
-      z-index: 100;
-  }
+#click-menu {
+  height: 100vh;
+  width: 100vw;
+  /* display:none; */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-700px);
+  background-color: rgb(38, 38, 38);
+}
 
-  #nav{
-    background-color: rgb(38, 38, 38);
-  }
+#scrolling-items {
+  display: flex;
+  flex-direction: column;
+}
 
-  #phan{
-    padding-left: 4.5%;
-    font-size: 200px;
-    font-weight: 800;
-    position: absolute;
-    top: 47%;
-    color: rgb(38, 38, 38);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+#cursor {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  position: fixed;
+  z-index: 100;
+}
 
-  #studio{
-    padding-left: 4.5%;
-    font-size: 200px;
-    font-weight: 800;
-    position: absolute;
-    top: 68%;
-    color: orangered;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+#nav {
+  background-color: rgb(38, 38, 38);
+}
 
-#select{
+#phan {
+  padding-left: 4.5%;
+  font-size: 200px;
+  font-weight: 800;
+  position: absolute;
+  top: 47%;
+  color: rgb(38, 38, 38);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#studio {
+  padding-left: 4.5%;
+  font-size: 200px;
+  font-weight: 800;
+  position: absolute;
+  top: 68%;
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#select {
   /* height: 35%;
   padding-top: 10%; */
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(38, 38, 38);
-  
+
 }
 
-#work{
+#work {
   /* height: 50%;
   padding-bottom: 30%; */
-    font-weight: 400;
+  font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(38, 38, 38);
-  
+
 }
-#select_work{
+
+#select_work {
   /* background-color:rgb(199, 199, 199); */
   height: 110%;
 }
 
-#exp_list{
+#exp_list {
   /* background-color: black; */
   width: 100%;
   /* background-color: aqua; */
   position: absolute;
   left: 38%;
-  
+
 }
-#main_works{
+
+#main_works {
   width: 100%;
   display: flex;
   padding-left: 4.5%;
   border-top: 2px solid black;
   padding-top: 40px;
 
+}
+
+
+.overlays  {
+  
+  position: relative;
+}
+
+.overlay {
+
+  height: 9vw;
+  width: 70vw;
+  position: absolute;
+  z-index: 10;
 }
