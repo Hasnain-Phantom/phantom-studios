@@ -282,115 +282,46 @@ gsap.to(".serv",{
 
 
 
-document.getElementById("s1").addEventListener("mousemove",function(dets){
 
-    gsap.to(document.getElementById("s1"),{
-       scale:1.3,
-       margin:100, 
-    
-    })
-    gsap.to(document.getElementById("s1_h11"),{
-        rotation: -90
-     })
-     gsap.to(document.getElementById("s1_h12"),{
-        rotation: 90
-     })
-})
-document.getElementById("s1").addEventListener("mouseleave",function(dets){
-    gsap.to(document.getElementById("s1"),{
-        scale:1,
-        margin:0,
-    
+// Adding 3D effect to all images while preserving existing properties
+const images = ["s1", "s2", "s3", "s4"];
 
- 
-     })
-     gsap.to(document.getElementById("s1_h11"),{
-        rotation: 0
-     })
-     gsap.to(document.getElementById("s1_h12"),{
-        rotation: 0
-     })
-});
+images.forEach((id) => {
+  const img = document.getElementById(id);
+  const h1_11 = document.getElementById(`${id}_h11`);
+  const h1_12 = document.getElementById(`${id}_h12`);
 
-document.getElementById("s2").addEventListener("mousemove",function(dets){
-    
-    gsap.to(document.getElementById("s2"),{
-       scale:1.3,
-       margin:100, 
-       y:50
-    })
-    gsap.to(document.getElementById("s2_h11"),{
-        rotation: -90
-     })
-     gsap.to(document.getElementById("s2_h12"),{
-        rotation: 90
-     })
-})
-document.getElementById("s2").addEventListener("mouseleave",function(dets){
-    gsap.to(document.getElementById("s2"),{
-        scale:1,
-        margin:0,
- 
-     })
-     gsap.to(document.getElementById("s2_h11"),{
-        rotation: 0
-     })
-     gsap.to(document.getElementById("s2_h12"),{
-        rotation: 0
-     })
-});
+  img.addEventListener("mousemove", (event) => {
+    const rect = img.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5; // Normalized X
+    const y = (event.clientY - rect.top) / rect.height - 0.5; // Normalized Y
 
-document.getElementById("s3").addEventListener("mousemove",function(dets){
-    
-    gsap.to(document.getElementById("s3"),{
-       scale:1.3,
-       margin:100, 
-       y:50
-    })
-    gsap.to(document.getElementById("s3_h11"),{
-        rotation: -90
-     })
-     gsap.to(document.getElementById("s3_h12"),{
-        rotation: 90
-     })
-})
-document.getElementById("s3").addEventListener("mouseleave",function(dets){
-    gsap.to(document.getElementById("s3"),{
-        scale:1,
-        margin:0,
- 
-     })
-     gsap.to(document.getElementById("s3_h11"),{
-        rotation: 0
-     })
-     gsap.to(document.getElementById("s3_h12"),{
-        rotation: 0
-     })
-});
-document.getElementById("s4").addEventListener("mousemove",function(dets){
-    
-    gsap.to(document.getElementById("s4"),{
-       scale:1.3,
-       margin:100, 
-       y:50
-    })
-    gsap.to(document.getElementById("s4_h11"),{
-        rotation: -90
-     })
-     gsap.to(document.getElementById("s4_h12"),{
-        rotation: 90
-     })
-})
-document.getElementById("s4").addEventListener("mouseleave",function(dets){
-    gsap.to(document.getElementById("s4"),{
-        scale:1,
-        margin:0,
- 
-     })
-     gsap.to(document.getElementById("s4_h11"),{
-        rotation: 0
-     })
-     gsap.to(document.getElementById("s4_h12"),{
-        rotation: 0
-     })
+    // Apply 3D transformations
+    gsap.to(img, {
+      scale: 1.3,
+      rotationX: -y * 40, // Increased tilt based on Y
+      rotationY: x * 40,  // Increased tilt based on X
+      transformPerspective: 1000,
+      ease: "power1.out",
+    });
+
+    // Rotate text headings
+    gsap.to(h1_11, { rotation: -90, ease: "power1.out" });
+    gsap.to(h1_12, { rotation: 90, ease: "power1.out" });
+  });
+
+  img.addEventListener("mouseleave", () => {
+    // Reset transformations
+    gsap.to(img, {
+      scale: 1,
+      rotationX: 0,
+      rotationY: 0,
+      transformPerspective: 1000,
+      ease: "power1.out",
+    });
+
+    // Reset text headings
+    gsap.to(h1_11, { rotation: 0, ease: "power1.out" });
+    gsap.to(h1_12, { rotation: 0, ease: "power1.out" });
+  });
 });
