@@ -50,7 +50,7 @@ t2
         trigger: "#exp_list",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
@@ -61,7 +61,7 @@ t2
         trigger: "#exp_list",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
@@ -72,7 +72,7 @@ t2
         trigger: "#exp_list",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
@@ -83,7 +83,7 @@ t2
         trigger: "#exp_list",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
@@ -94,7 +94,7 @@ t2
         trigger: "#exp_list",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
@@ -104,24 +104,28 @@ t2
 gsap.from("#select", {
     opacity:0,
     x:1200,
+    ease: "power1.out",
     scrollTrigger: {
         trigger: "#select_work",
         start: "top 70%",
       end: "center 0%",
       markers:false,
-      scrub: true
+      scrub: 1
+      
         
     },
 })
 gsap.from("#work", {
     opacity:0,
     x:-1200,
+ease: "power1.out",
+
     scrollTrigger: {
         trigger: "#select_work",
         start: "top 70%",
       end: "center 0%",
       markers:false,
-      scrub: true
+      scrub: 1
         
     },
 })
@@ -134,7 +138,7 @@ gsap.from("#video", {
         start: "top 70%",
         end: "center 0%",
         markers: false,
-        scrub: 1, 
+        scrub: 3, 
     },
 });
 
@@ -337,16 +341,63 @@ gsap.to("#comapny_child",{
     }
 })
 
-gsap.from(".exp_list_name1", {
+//////////////////////
+var t4=gsap.timeline();
+t4
+
+.from("#one", {
     opacity:0,
-    x:1200,
-    stagger:1,
-    duration:2,
+    x:400,
     scrollTrigger: {
         trigger: "#exp_list2",
         start: "top 70%",
       end: "center center",
-      scrub: true
+      scrub: 2
         
     },
 })
+.from("#two", {
+    opacity:0,
+    x:600,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#three", {
+    opacity:0,
+    x:800,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#four", {
+    opacity:0,
+    x:1000,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#five", {
+    opacity:0,
+    x:1200,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+
