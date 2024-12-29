@@ -289,7 +289,7 @@ const images = ["s1", "s2", "s3", "s4"];
 images.forEach((id) => {
   const img = document.getElementById(id);
   const h1_11 = document.getElementById(`${id}_h11`);
-  const h1_12 = document.getElementById(`${id}_h12`);
+//   const h1_12 = document.getElementById(`${id}_h12`);
 
   img.addEventListener("mousemove", (event) => {
     const rect = img.getBoundingClientRect();
@@ -307,7 +307,7 @@ images.forEach((id) => {
 
     // Rotate text headings
     gsap.to(h1_11, { rotation: -90, ease: "power1.out" });
-    gsap.to(h1_12, { rotation: 90, ease: "power1.out" });
+    // gsap.to(h1_12, { rotation: 90, ease: "power1.out" });
   });
 
   img.addEventListener("mouseleave", () => {
@@ -322,6 +322,20 @@ images.forEach((id) => {
 
     // Reset text headings
     gsap.to(h1_11, { rotation: 0, ease: "power1.out" });
-    gsap.to(h1_12, { rotation: 0, ease: "power1.out" });
+    // gsap.to(h1_12, { rotation: 0, ease: "power1.out" });
   });
 });
+
+
+gsap.to("#comapny_child",{
+    x:-400,
+    scrollTrigger:{
+        trigger:"#companies",
+        scoller:"body",
+        start:"top center",
+        end:"center center",
+        markers:true,
+        scrub:1
+        // pin:true
+    }
+})
