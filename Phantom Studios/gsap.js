@@ -419,7 +419,7 @@ gsap.from("#s_para2",{
     opacity:0,
     y:50,
     scrollTrigger:{
-        trigger:"#parent_spara",
+        trigger:"#parent_spara2",
         start:"top 70%",
         end:"center center",
         markers:true,
@@ -443,13 +443,12 @@ gsap.from("#main_work1-heading",{
 })
 gsap.from("#s_para",{
     opacity:0,
-    y:50,
+    y:100,
     scrollTrigger:{
-        trigger:"#parent1_spara",
+        trigger:"#parent_spara",
         start:"top 70%",
         end:"center center",
         markers:true,
-        scrub:1,
-        markers:false,
+        scrub:1
     }
 })
