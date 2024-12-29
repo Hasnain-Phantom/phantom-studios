@@ -336,3 +336,17 @@ gsap.to("#comapny_child",{
         // pin:true
     }
 })
+
+gsap.from(".exp_list_name1", {
+    opacity:0,
+    x:1200,
+    stagger:1,
+    duration:2,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: true
+        
+    },
+})
