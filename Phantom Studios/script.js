@@ -13,7 +13,8 @@ laptop_menu_icon.addEventListener("click",function(){
 var laptop_close_button=document.getElementsByClassName("laptop-close-button")[0];
 laptop_close_button.addEventListener("click",function(){
     gsap.to("#click-menu",{
-        y:-700,
+        y:-800,
+        opacity:0,
         duration:1
     })
     document.getElementById("nav").style.display="block";
