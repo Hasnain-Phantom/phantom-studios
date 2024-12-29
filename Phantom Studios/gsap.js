@@ -305,9 +305,6 @@ images.forEach((id) => {
       ease: "power1.out",
     });
 
-    // Rotate text headings
-    gsap.to(h1_11, { rotation: -90, ease: "power1.out" });
-    // gsap.to(h1_12, { rotation: 90, ease: "power1.out" });
   });
 
   img.addEventListener("mouseleave", () => {
@@ -320,9 +317,6 @@ images.forEach((id) => {
       ease: "power1.out",
     });
 
-    // Reset text headings
-    gsap.to(h1_11, { rotation: 0, ease: "power1.out" });
-    // gsap.to(h1_12, { rotation: 0, ease: "power1.out" });
   });
 });
 
