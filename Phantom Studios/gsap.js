@@ -100,6 +100,7 @@ t2
 })
 
 
+
 gsap.from("#select", {
     opacity:0,
     x:1200,
@@ -322,14 +323,16 @@ images.forEach((id) => {
 
 
 gsap.to("#comapny_child",{
-    x:-400,
+    x:-200,
     scrollTrigger:{
         trigger:"#companies",
         scoller:"body",
         start:"top center",
         end:"center center",
         markers:true,
-        scrub:1
+        scrub:1,
+        markers:false,
+
         // pin:true
     }
 })
