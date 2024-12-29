@@ -401,3 +401,55 @@ t4
     },
 })
 
+
+
+gsap.from("#main_work-heading",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#main_works2",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1,
+        markers:false,
+    }
+})
+gsap.from("#s_para2",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#parent_spara",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1,
+        markers:false,
+    }
+})
+
+
+gsap.from("#main_work1-heading",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#main_works",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1,
+        markers:false,
+    }
+})
+gsap.from("#s_para",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#parent1_spara",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1,
+        markers:false,
+    }
+})
