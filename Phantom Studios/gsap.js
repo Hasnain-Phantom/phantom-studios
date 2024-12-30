@@ -281,6 +281,7 @@ gsap.to(".serv",{
         scoller:"body",
         start:"top 0%",
         end:"top -100%",
+        ease: "power1.out",
         scrub:1,pin:true
     }
 })
@@ -596,3 +597,18 @@ gsap.to("#story_left_heading", {
     },
 })
 GSDevTools.create();
+
+
+
+gsap.from("#about_us",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#aboutus_right",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1
+      
+    }
+})

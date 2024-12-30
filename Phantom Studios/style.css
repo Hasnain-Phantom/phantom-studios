@@ -146,12 +146,40 @@ body {
 #services h1 {
   font-size: 3.7rem;
   font-weight: 100;
-  margin: 0px 70px;
+  margin: 100px 70px;
   /* Add spacing on the sides */
   text-align: center;
   line-height: 1;
   /* Adjust line height for closer spacing between lines */
+ 
 }
+
+#services{
+  margin-top: 12%;
+  background-color: black;
+  color: white;
+}
+#service1{
+  background-color: black;
+  color: white;
+}
+
+#service2{
+  background-color: black;
+  color: white;
+}
+
+#service3{
+  background-color: black;
+  color: white;
+}
+
+#service4{
+  background-color: black;
+  color: white;
+}
+
+
 
 #s_para {
   width: 100%;
@@ -193,7 +221,7 @@ body {
 }
 
 #s_para2 {
-
+  
   width: 100%;
   text-align: center;
   font-size: 55px;
@@ -203,7 +231,6 @@ body {
 
 #parent1_spara {
   width: 100%;
-  height: 80%;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 55px;
@@ -233,3 +260,56 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+#parent_spara2{
+  border-bottom: 2px solid black;
+  height: 60%;
+  padding-top: 0%;
+  padding-bottom: 12%;
+}
+
+#achmt{
+  margin-top: 10%;
+}
+
+#rig_text{
+  font-size: 30px;
+  padding-left: 10%;
+}
+
+#servicet1{
+  padding-left: 5%;
+}
+#servicet2{
+  padding-left: 5%;
+}
+#servicet3{
+  padding-left: 5%;
+}
+#servicet4{
+  padding-left: 5%;
+}
+
+/* #s1_h11{
+  padding-left: 5%;
+}
+
+#s2_h11{
+  padding-left: 5%;
+}
+
+#s3_h11{
+  padding-left: 5%;
+}
+#s4_h11{
+  padding-left: 5%;
+} */
+
+
+#servicet1 h1{
+  padding-right: 15%;
+  margin-right: 10%;
+  
+  
+}
+
