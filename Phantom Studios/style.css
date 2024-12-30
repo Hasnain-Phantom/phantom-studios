@@ -159,6 +159,8 @@ body {
   font-size: 50px;
   padding-top: 10%;  
   background-color: rgb(0, 0, 0);
+
+
   line-height: 60px;
 }
 
@@ -206,4 +208,13 @@ body {
   padding-top: 8%;  
   background-color: rgb(0, 0, 0);
   line-height: 60px;
+}
+
+#story_img{
+  width:700px;
+  height:500px;
+  background-image: url("media/service1.avif");
+  background-attachment: fixed;
+  /* background-size: cover; */
+ 
 }
