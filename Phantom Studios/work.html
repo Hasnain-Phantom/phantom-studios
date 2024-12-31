@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            overflow-x: hidden;
+        }
+
+        .containers {
+            display: flex;
+            width: 500vw;
+            height: 100vh;
+        }
+
+        .sections {
+            flex: 1;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            font-size: 2rem;
+            /* background-color: burlywood; */
+            /* color: white; */
+        }
+
+        
+
+        .imgs {
+            width: 80vw;
+            height: 80vh;
+            background-color: #3ce7b9;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img1{
+            background-image: url();
+        }
+        .img2 {
+            background-image: url();
+        }
+        .img3 {
+            background-image: url();
+        }
+        .img4 {
+            background-image: url();
+        }
+        .img5 {
+            background-image: url();
+        }
+    </style>
+</head>
+
+<body>
+    <video style="    max-width: 100%;
+    height: auto;" loop autoplay muted>
+        <source src="media/phantomstudios showcase.mp4" type="video/mp4">
+    </video>
+
+    <div id="about_us" class="flex my-[150px] mr-[50px]">
+        <div id="aboutus_left" style="width: 40%; font-size: 14px;" class="px-[50px] pt-[20px]">
+            IN OUR DESIGN STAGE, PRODUCTIVITY <br>TAKES CENTER STAGE, AND REVENUE <br>APPLAUDS ITS ENCORE.</div>
+        <div id="aboutus_right" style="width: 60%; font-size: 30px;">
+            — Solutions That Speak Louder Than
+            <br>
+            Words!
+        </div>
+    </div>
+
+    <div class="containers" id="horizontalScroll">
+        <div class="sections p-[40px]">
+            <h1 class="text-[70px]">ORBITAL</h1>
+            <p>WEBSITE + WEB APP PORTAL</p>
+            <div class="img1 imgs">for Image</div>
+        </div>
+        <div class="sections p-[40px]">
+            <h1 class="text-[70px]">ORBITAL</h1>
+            <p>WEBSITE + WEB APP PORTAL</p>
+            <div class="img2 imgs">for Image</div>
+        </div>
+        <div class="sections p-[40px]">
+            <h1 class="text-[70px]">ORBITAL</h1>
+            <p>WEBSITE + WEB APP PORTAL</p>
+            <div class="img3 imgs">for Image</div>
+        </div>
+        <div class="sections p-[40px]">
+            <h1 class="text-[70px]">ORBITAL</h1>
+            <p>WEBSITE + WEB APP PORTAL</p>
+            <div class="img4 imgs">for Image</div>
+        </div>
+        <div class="sections p-[40px]">
+            <h1 class="text-[70px]">ORBITAL</h1>
+            <p>WEBSITE + WEB APP PORTAL</p>
+            <div class="img5 imgs">for Image</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        const container = document.getElementById("horizontalScroll");
+        gsap.to(container, {
+            x: () => `-${container.scrollWidth - window.innerWidth}px`,
+            ease: "none",
+            scrollTrigger: {
+                trigger: container,
+                start: "top top",
+                end: () => `+=${container.scrollWidth - window.innerWidth}`,
+                scrub: true,
+                pin: true,
+                anticipatePin: 1,
+            }
+        });
+        gsap.from("#aboutus_left", {
+            opacity: 0,
+            y: 100,
+            scrollTrigger: {
+                trigger: "#about_us",
+                start: "top 70%",
+                end: "center center",
+                markers: true,
+                scrub: 1,
+                markers: false,
+            }
+        });
+        gsap.from("#aboutus_right", {
+            opacity: 0,
+            y: 100,
+            scrollTrigger: {
+                trigger: "#about_us",
+                start: "top 70%",
+                end: "center center",
+                // markers:true,
+                scrub: 1
+                // markers:false,
+            }
+        })
+
+    </script>
+</body>
+
+</html>

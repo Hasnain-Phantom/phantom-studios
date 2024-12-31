@@ -586,21 +586,36 @@ t4
     },
 })
 
-GSDevTools.create();
 
-
-
-gsap.from("#about_us",{
+gsap.from("#aboutus_left",{
     opacity:0,
-    y:50,
+    y:100,
     scrollTrigger:{
-        trigger:"#aboutus_right",
+        trigger:"#about_us",
         start:"top 70%",
         end:"center center",
         markers:true,
+        scrub:1,
+        markers:false,
+    }
+});
+gsap.from("#aboutus_right",{
+    opacity:0,
+    y:100,
+    scrollTrigger:{
+        trigger:"#about_us",
+        start:"top 70%",
+        end:"center center",
+        // markers:true,
         scrub:1
-      
+        // markers:false,
     }
 })
 
 
+
+
+
+
+
+GSDevTools.create();
