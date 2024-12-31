@@ -237,6 +237,7 @@ body {
   padding-top: 8%;
   background-color: rgb(0, 0, 0);
   line-height: 60px;
+  
 }
 
 #story_img {
@@ -315,8 +316,6 @@ body {
 #servicet1 h1{
   padding-right: 15%;
   margin-right: 10%;
-  
-  
 }
 
 #story_left{
@@ -329,3 +328,59 @@ body {
 
 
 
+/*------------------ WORK----------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  overflow-x: hidden;
+}
+
+.containers {
+  display: flex;
+  width: 500vw;
+  height: 100vh;
+}
+
+.sections {
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 2rem;
+  /* background-color: burlywood; */
+  /* color: white; */
+}
+
+
+
+.imgs {
+  width: 80vw;
+  height: 80vh;
+  background-color: #3ce7b9;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img1{
+  background-image: url();
+}
+.img2 {
+  background-image: url();
+}
+.img3 {
+  background-image: url();
+}
+.img4 {
+  background-image: url();
+}
+.img5 {
+  background-image: url();
+}
