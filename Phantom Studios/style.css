@@ -244,12 +244,13 @@ body {
   height: 500px;
   background-image: url("media/service1.avif");
   background-attachment: fixed;
+  
   /* background-size: cover; */
 
 }
 
-.green-section {
-  background-color: #b0ff00;
+/* .green-section {
+  background-color: orangered;
   color: black;
   font-size: 5rem;
   font-weight: bold;
@@ -259,7 +260,9 @@ body {
   padding: 20px 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
+
+
 
 #parent_spara2{
   border-bottom: 2px solid black;
@@ -305,6 +308,9 @@ body {
   padding-left: 5%;
 } */
 
+#s1_h11{
+  font-size: 100px;
+}
 
 #servicet1 h1{
   padding-right: 15%;
@@ -313,3 +319,10 @@ body {
   
 }
 
+#story_left{
+  padding-left: 1%;
+  
+}
+#story_right1{
+  padding-left: 10%;
+}
