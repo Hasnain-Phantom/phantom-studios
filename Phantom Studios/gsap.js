@@ -585,17 +585,7 @@ t4
         
     },
 })
-gsap.to("#story_left_heading", {
-    
-    y:600,
-    scrollTrigger: {
-        trigger: "#story_left",
-        start: "center 60%",
-      end: "center center",
-      scrub: 1
-        
-    },
-})
+
 GSDevTools.create();
 
 
