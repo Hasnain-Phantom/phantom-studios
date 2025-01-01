@@ -1,4 +1,3 @@
-
 gsap.to("#menuitems", {
     y: -100,
     scrollTrigger: {
@@ -17,7 +16,6 @@ gsap.from(".side-menu",{
         scrub: 1
     },
 });
-
 gsap.from(".menu-icon",{
     x:500,  
     scrollTrigger: {
@@ -608,47 +606,6 @@ gsap.from("#aboutus_right",{
         end:"center center",
         // markers:true,
         scrub:1
-        // markers:false,
-    }
-})
-
-
-
-gsap.registerPlugin(ScrollTrigger);
-const container = document.getElementById("horizontalScroll");
-gsap.to(container, {
-    x: () => `-${container.scrollWidth - window.innerWidth}px`,
-    ease: "none",
-    scrollTrigger: {
-        trigger: container,
-        start: "top top",
-        end: () => `+=${container.scrollWidth - window.innerWidth}`,
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-    }
-});
-gsap.from("#aboutus_left", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-        trigger: "#about_us",
-        start: "top 70%",
-        end: "center center",
-        markers: true,
-        scrub: 1,
-        markers: false,
-    }
-});
-gsap.from("#aboutus_right", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-        trigger: "#about_us",
-        start: "top 70%",
-        end: "center center",
-        // markers:true,
-        scrub: 1
         // markers:false,
     }
 })

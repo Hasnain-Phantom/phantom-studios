@@ -18,7 +18,18 @@
 
             overflow-x: hidden;
         }
-
+        #click-menu {
+  height: 100vh;
+  width: 100vw;
+  /* display:none; */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-800px);
+  background-color: rgb(38, 38, 38);
+}
         .containers {
             display: flex;
             width: 500vw;
@@ -67,6 +78,58 @@
 </head>
 
 <body>
+
+  <div class="">
+
+    <div id="click-menu" class="bg-black ">
+      <div id="scrolling-items" class="absolute top-0 left-0 w-full">
+        <div class=" laptop-close-button text-right w-screen text-[50px] fixed right-4 text-white">X</div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          About Us</div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Services
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Work</div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Vision
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Master Classes
+        </div>
+        <div class="text-white text-[100px] hover:border-b-4 border-white transition-all duration-200 ease-in-out">
+          Contact
+        </div>
+      </div>
+    </div>
+
+
+    <div id="nav" class="navbar  fixed top-0 bg-black h-13 z-10 w-full pt-4 text-black">
+      <nav class="flex justify-around ">
+
+        <div id="logo ">PHANTOM STUDIO'S</div>
+        <div id="menuitems" class="flex gap-8 ">
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">About us</div>
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Services</div>
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out text-black"><a
+              href="work.html">Work</a></div>
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Vision</div>
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Master Classes
+          </div>
+          <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Contact</div>
+        </div>
+        <div class="right-menu flex gap-8">
+          <div class="side-menu hover:border-b-4 border-black transition-all duration-100 ease-in-out">Work with us
+          </div>
+          <div class="menu-icon laptop-menu-icon hover:border-b-4 border-black transition-all duration-100 ease-in-out">
+            Menu</div>
+        </div>
+      </nav>
+    </div>
+
+   
+  </div>
+  
     <video style="    max-width: 100%;
     height: auto;" loop autoplay muted>
         <source src="media/phantomstudios showcase.mp4" type="video/mp4">
@@ -109,214 +172,55 @@
             <div class="img5 imgs">for Image</div>
         </div>
     </div>
-
     
-
-  <div id="companies" class=" flex justify-center bg-white text-white items-center ">
-
-    <marquee scrollamount="20" behavior="" direction="" class="z-10">
-      <div id="comapny_child" class="flex gap-60 text-[70px] text-white ">
-        <img src="media/pngwing.com.png" height="140px" width="140px" class="comp" alt="">
-        <img src="media/pngwing.com (1).png" height="140px" width="140px" class="comp" alt="">
-        <img src="media/pngwing.com (2).png" height="140px" width="140px" class="comp" alt="">
-        <img src="media/pngwing.com (3).png" height="140px" width="140px" class="comp" alt="">
-        <img src="media/pngwing.com (4).png" height="140px" width="140px" class="comp" alt="">
-        <img src="media/sketch-logo-1.png" height="100px" width="600px" class="comp" alt="">
+    <div id="main_works2" class="my-[100px]">
+      <div style="width: 35%;" id="main_work-heading">
+        <h2>SIMPLICITY AND CLARITY ARE OUR GUIDING PRINCIPLES, FROM START TO FINISH FROM DESIGN TO <br>PRODUCT
+          DEVELOPMENT. <br> <a href="works" style="color: rgb(255, 255, 255);"><br>View all works</a></h2>
       </div>
-    </marquee>
-  </div>
-
-
-
-  <div id="main_works2">
-    <div style="width: 35%;" id="main_work-heading">
-      <h2>SIMPLICITY AND CLARITY ARE OUR GUIDING PRINCIPLES, FROM START TO FINISH FROM DESIGN TO <br>PRODUCT
-        DEVELOPMENT. <br> <a href="works" style="color: rgb(255, 255, 255);"><br>View all works</a></h2>
-    </div>
-
-    <div id="exp_list2" style="width: 65%;" class="px-[150px]">
-      <!-- List 1 -->
-
-      <div id="one" class="exp_list_name1 hover:border-b-4 border-black">
-        <h1 class="text-[70px]">ORBITAL</h1>
-        <p>WEBSITE + WEB APP PORTAL</p>
-        <hr>
-      </div>
-
-      <!-- List 2 -->
-
-      <div id="two" class="exp_list_name1 hover:border-b-4 border-black">
-        <h1 class="text-[70px]">BENTLEY</h1>
-        <p>WEBSITE REDESIGN + ART DIRECTION</p>
-        <hr>
-      </div>
-
-      <!-- List 3 -->
-
-      <div id="three" class="exp_list_name1 hover:border-b-4 border-black">
-        <h1 class="text-[70px]">ORBITAL</h1>
-        <p>WEBSITE + WEB APP PORTAL</p>
-        <hr>
-      </div>
-
-      <!-- List 4 -->
-
-      <div id="four" class="exp_list_name1 hover:border-b-4 border-black">
-        <h1 class="text-[70px]">ORBITAL</h1>
-        <p>WEBSITE + WEB APP PORTAL</p>
-        <hr>
-      </div>
-
-      <!-- List 5 -->
-
-      <div id="five" class="exp_list_name1 hover:border-b-4 border-black">
-        <h1 class="text-[70px]">ORBITAL</h1>
-        <p>WEBSITE + WEB APP PORTAL</p>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <div id="parent_spara2" class="flex justify-center items-center h-[80vh]">
-
-    <div id="s_para2">— CREATIVELY DRIVEN <br>SOLUTION ORIENTATED</div>
-  </div>
-
-
-
-  <!-- <div id="cursor"></div> -->
-  <div id="achmt" class="w-full flex">
-    <div id="achmt_left" style="width: 40%; font-size: 15px;" class="px-[60px] pt-[20px]">WE HAVE DRIVEN RESULTS FOR
-      OVER 100+ <br>STARTUP BUSINESSES IN THE PAST 07 YEARS OF TEAM
-      EXPERIENCE.</div>
-
-    <div id="achmt_right" style="width: 60%;">
-      <h4 id="rig_text">
-      — We're a seasoned squad of creative maestros, brewing brilliance with every stroke.</h4>
-      <div id="achmt_righ_top" class="h-[50vh] flex justify-around items-center">
-        <div id="SKILLED_Members">
-          <span id="count1" class="text-[92px]">0</span><br>
-          <span class="text-[14px]">SKILLED MEMBERS </span>
+  
+      <div id="exp_list2" style="width: 65%;" class="px-[150px]">
+        <!-- List 1 -->
+  
+        <div id="one" class="exp_list_name1 hover:border-b-4 border-black">
+          <h1 class="text-[70px]">ORBITAL</h1>
+          <p>WEBSITE + WEB APP PORTAL</p>
+          <hr>
         </div>
-        <div id="GROWTH">
-          <span id="count2" class="text-[92px]">0</span><br>
-          <span class="text-[14px]"> YEARS OF GROWTH </span>
+  
+        <!-- List 2 -->
+  
+        <div id="two" class="exp_list_name1 hover:border-b-4 border-black">
+          <h1 class="text-[70px]">BENTLEY</h1>
+          <p>WEBSITE REDESIGN + ART DIRECTION</p>
+          <hr>
         </div>
-        <div id="CLIENTS">
-          <span id="count3" class="text-[92px]">0</span><br>
-
-          <span class="text-[14px]"> SATISFIED CLIENTS </span>
+  
+        <!-- List 3 -->
+  
+        <div id="three" class="exp_list_name1 hover:border-b-4 border-black">
+          <h1 class="text-[70px]">ORBITAL</h1>
+          <p>WEBSITE + WEB APP PORTAL</p>
+          <hr>
+        </div>
+  
+        <!-- List 4 -->
+  
+        <div id="four" class="exp_list_name1 hover:border-b-4 border-black">
+          <h1 class="text-[70px]">ORBITAL</h1>
+          <p>WEBSITE + WEB APP PORTAL</p>
+          <hr>
+        </div>
+  
+        <!-- List 5 -->
+  
+        <div id="five" class="exp_list_name1 hover:border-b-4 border-black">
+          <h1 class="text-[70px]">ORBITAL</h1>
+          <p>WEBSITE + WEB APP PORTAL</p>
+          <hr>
         </div>
       </div>
-
-      <div id="achmt_righ_top" class="h-[10vh] flex justify-around items-center">
-        <div id="RAISED">
-          <span id="count11" class="text-[92px]">0</span><br>
-          <span class="text-[14px]">CLIENTS RAISED </span>
-        </div>
-        <div id="RATE">
-          <span id="count22" class="text-[92px]">0</span><span class="text-[92px]">%</span><br>
-          <span class="text-[14px]"> ONBOARDING CONVERSION RATE </span>
-        </div>
-        <div id="AWARDS">
-          <span id="count33" class="text-[92px]">0</span><br>
-
-          <span class="text-[14px]">AWARDS </span>
-        </div>
-      </div>
-
-
     </div>
-  </div>
-
-
-  <hr>
-  <div id="services" class="h-screen w-full flex items-center justify-center bg-black">
-
-    <div id="service1" class=" serv flex bg-black color-white items-center absolute z-40 h-screen">
-      <img id="s1" src="media/1.jpg" height="300" width="300" style="width: 40%; "
-        class="px-[150px] pt-[50px]">
-      <div  id="servicet1" style="width: 80%; ">
-        <h1 id="s1_h11" style= "margin-left: 0; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 70px; width: 100%;" >WEB DESIGN</h1>
-        <h2 id="service_text" style="font-size: 25px; width: 85%; padding-bottom: 8%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel consequuntur
-          unde alias odit, adipisci dignissimos culpa quis praesentium, laboriosam atque esse aspernatur reprehenderit
-          repudiandae. Nam qui minus ducimus consectetur?</h2>
-      </div>
-    </div>
-
-    <div id="service2" class="serv flex bg-white items-center absolute z-30 h-screen">
-      <img id="s2" src="media/service2.avif" alt="" height="300" width="300" style="width: 40%; "
-        class="px-[150px] pt-[50px]">
-      <div id="servicet2" style="width: 60%; ">
-        <h1 id="s2_h11" style= "margin-left: 0; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 70px; width: 100%;">STRATEGY DIGITAL</h1>
-        <h2 class="service_text" style="font-size: 25px; width: 85%; padding-bottom: 8%;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel consequuntur
-          unde alias odit, adipisci dignissimos culpa quis praesentium, laboriosam atque esse aspernatur reprehenderit
-          repudiandae. Nam qui minus ducimus consectetur?</h2>
-      </div>
-    </div>
-
-
-    <div id="service3" class="serv flex bg-white items-center absolute z-20 h-screen">
-      <img id="s3" src="media/2.jpg" alt="" height="300" width="300" style="width: 40%; "
-        class="px-[150px] pt-[50px]">
-      <div id="servicet3" style="width: 60%; ">
-        <h1 id="s3_h11" style= "margin-left: 0; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 70px; width: 100%;">DIGITAL MARKETING</h1>
-        <h2 class="service_text" style="font-size: 25px; width: 85%; padding-bottom: 8%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel consequuntur
-          unde alias odit, adipisci dignissimos culpa quis praesentium, laboriosam atque esse aspernatur reprehenderit
-          repudiandae. Nam qui minus ducimus consectetur?</h2>
-      </div>
-    </div>
-
-    <div id="service4" class="serv_last flex items-center absolute z-10 h-screen bg-white">
-      <img id="s4" src="media/3.jpg" alt="" height="300" width="300" style="width: 40%; "
-        class="px-[150px] pt-[50px]">
-      <div id="servicet4" style="width: 60%; ">
-        <h1 id="s4_h11" style= "margin-left: 0; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 70px; width: 100%; color: white;" >UI/UX DESIGNS</h1>
-        <h2 class="service_text" style="font-size: 25px; width: 85%; padding-bottom: 8%; color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel consequuntur
-          unde alias odit, adipisci dignissimos culpa quis praesentium, laboriosam atque esse aspernatur reprehenderit
-          repudiandae. Nam qui minus ducimus consectetur?</h2>
-      </div>
-    </div>
-
-  </div>
-
-  <div id="story" class="flex bg-[#D4D9D7]" style="">
-    <div id="story_left" style="width: 40%; font-size: 15px;" class="px-[60px] pt-[20px]">
-      <div class="my-[100px] " style="font-size: 18px;">WE HAVE SOMETIMES WE WRITE,
-        <br>SOMETIME WE READ
-      </div>
-    </div>
-
-    <div id="story_right" style="width: 60%; ">
-    <div  id="textr" style="font-size: 38px; padding-top: 10%; padding-left: 8%; margin-bottom: 10%;">  — Valuable insights, exciting stories and other things worth sharing with the world.</div>
-      <div id="story_img">
-      </div>
-      <div id="story_right1" style="margin-top: 10%; margin-bottom: 10%; padding-left: 0%;">
-        <div id="story_list1"  class="flex"  style=" ">
-          <img src="media/service1.avif" width="100" height="100" alt="">
-          <div id="sty_list1_heading">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et!
-          </div>
-        </div>
-        <hr>
-
-        <div id="story_list2" class="flex" style=" margin-top: 4%;">
-          <img src="media/service3.avif" width="100" height="100" alt="">
-          <div id="sty_list2_heading">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et!
-          </div>
-        </div>
-        <hr>
-
-        <div id="story_list3" class="flex" style=" margin-top: 4%;">
-          <img src="media/service2.avif" width="100" height="100" alt="">
-          <div id="sty_list3_heading">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et!
-          </div>
-        </div>
-        <hr>
-      </div>
-    </div>
-  </div>
 
   <div id="footer" class="h-screen flex bg-black text-white">
     <div id="footer_left" style="width: 40%; font-size: 18px; padding-left: 4%;" class="px-[180px] pt-[20px] my-[50px]">
@@ -403,7 +307,111 @@ color: rgb(255, 255, 255); font-family: system-ui, -apple-system, BlinkMacSystem
             }
         })
 
+
+        gsap.from("#main_work-heading",{
+    opacity:0,
+    y:50,
+    scrollTrigger:{
+        trigger:"#main_works2",
+        start:"top 70%",
+        end:"center center",
+        markers:true,
+        scrub:1,
+        markers:false,
+    }
+})
+var t4=gsap.timeline();
+t4
+
+.from("#one", {
+    opacity:0,
+    x:400,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#two", {
+    opacity:0,
+    x:600,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#three", {
+    opacity:0,
+    x:800,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#four", {
+    opacity:0,
+    x:1000,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+.from("#five", {
+    opacity:0,
+    x:1200,
+    scrollTrigger: {
+        trigger: "#exp_list2",
+        start: "top 70%",
+      end: "center center",
+      scrub: 2
+        
+    },
+})
+gsap.to("#menuitems", {
+    y: -100,
+    scrollTrigger: {
+        trigger: ".navbar",
+        start: "center top",
+        end: "center 100%",
+        scrub: 1
+    },
+});
+gsap.from(".side-menu",{
+    x:50,  
+    scrollTrigger: {
+        trigger: ".navbar",
+        start: "center top",
+        end: "center 100%",
+        scrub: 1
+    },
+});
+gsap.from(".menu-icon",{
+    x:500,  
+    scrollTrigger: {
+        trigger: ".navbar",
+        start: "center top",
+        end: "center 100%",
+        scrub: 1
+    }
+});
+
+
+
+
+
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
