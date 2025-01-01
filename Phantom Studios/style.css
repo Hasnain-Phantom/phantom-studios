@@ -1,7 +1,10 @@
 @font-face {
-  font-family: 'Integral CF';
+  /* font-family: 'Integral CF';
   src: url('./fonts/Fontspring-DEMO-integralcf-boldoblique.ttf') format('truetype');
   /* Update with the correct path and format */
+  /* font-weight: bold;
+  font-style: oblique; */
+  font-family: 'Integral CF', sans-serif;
   font-weight: bold;
   font-style: oblique;
 }
@@ -63,7 +66,8 @@ body {
   position: absolute;
   top: 47%;
   color: rgb(38, 38, 38);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family:sans-serif;
 }
 
 #studio {
@@ -383,4 +387,46 @@ body {
 }
 .img5 {
   background-image: url();
+}
+
+
+/* 
+#main2{
+  width: 100%;
+}
+#loader{
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+}
+#green{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0vh;
+  background-color: #db2704;
+}
+
+#loader h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vh;
+  font-weight: 500;
+
+}
+
+.reveal .parent .child{
+  display: block;
+
+} */
+
+#texts1 h4 {
+  color: black; 
+  transition: color 0.3s ease; 
+}
+
+#texts1 h4:hover {
+  color: #FF5733; 
 }

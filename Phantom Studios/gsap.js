@@ -25,19 +25,40 @@ gsap.from(".menu-icon",{
         scrub: 1
     }
 });
-var t1=gsap.timeline();
-t1
-.from("#phan", {
-    duration: 2,
+gsap.from("#nav",{
+    duration: 1,
     opacity:-3,
     y:50
 })
+var t1=gsap.timeline();
+t1
+
+.from("#texts1",{
+    duration: 1,
+    opacity:-3,
+
+    y:50
+})
+.from("#phan", {
+    duration: 1,
+    opacity:-3,
+    ease: "power1.out",
+    scrub: 1,
+    y:50
+  
+})
+
 .from("#studio", {
     duration: 1,
     opacity:-3,
+    ease: "power1.out",
+    scrub: 1,
     y:40
 
 });
+
+
+
 var t2=gsap.timeline();
 t2
 
@@ -332,7 +353,7 @@ gsap.to("#comapny_child",{
         scoller:"body",
         start:"top center",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
 
@@ -409,7 +430,7 @@ gsap.from("#main_work-heading",{
         trigger:"#main_works2",
         start:"top 70%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
     }
@@ -421,7 +442,7 @@ gsap.from("#s_para2",{
         trigger:"#parent_spara2",
         start:"top 70%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
     }
@@ -435,7 +456,7 @@ gsap.from("#main_work1-heading",{
         trigger:"#main_works",
         start:"top 70%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
     }
@@ -447,7 +468,7 @@ gsap.from("#s_para",{
         trigger:"#parent_spara",
         start:"top 70%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1
     }
 })
@@ -460,7 +481,7 @@ gsap.to("#count1", { innerText: 15, duration: 3,
         trigger:"#achmt_righ_top",
         start:"top 70%",
         end:"center center",
-        // markers:true,
+        // markers:false,
         scrub:1
     }
   });
@@ -472,7 +493,7 @@ gsap.to("#count2", { innerText: 4, duration: 3,
         trigger:"#achmt_righ_top",
         start:"top 70%",
         end:"center center",
-        // markers:true,
+        // markers:false,
         scrub:1
     }
   });
@@ -484,7 +505,7 @@ gsap.to("#count3", { innerText: 30, duration: 3,
         trigger:"#achmt_righ_top",
         start:"top 70%",
         end:"center center",
-        // markers:true,
+        // markers:false,
         scrub:1
     }
   });
@@ -499,7 +520,7 @@ gsap.to("#count11", { innerText: 21, duration: 3,
         trigger:"#RAISED",
         start:"-200% 200%",        end:"center center",
 
-        markers:true,
+        markers:false,
         scrub:1
     }
   });
@@ -511,7 +532,7 @@ gsap.to("#count22", { innerText: 300, duration: 3,
         trigger:"#RATE",
         start:"-200% 200%",        end:"center center",
 
-        markers:true,
+        markers:false,
         scrub:1
     }
   });
@@ -523,7 +544,7 @@ gsap.to("#count33", { innerText: 10, duration: 3,
         trigger:"#AWARDS",
         start:"-200% 200%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1
     }
   });
@@ -538,7 +559,7 @@ gsap.from("#story_img", {
         scoller:"body",
         start:"top center",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
         
@@ -556,7 +577,7 @@ t4
         trigger: "#story_right1",
         start: "top 70%",
       end: "top center",
-      markers:true,
+      markers:false,
       scrub: 2
         
     },
@@ -592,7 +613,7 @@ gsap.from("#aboutus_left",{
         trigger:"#about_us",
         start:"top 70%",
         end:"center center",
-        markers:true,
+        markers:false,
         scrub:1,
         markers:false,
     }
@@ -604,7 +625,7 @@ gsap.from("#aboutus_right",{
         trigger:"#about_us",
         start:"top 70%",
         end:"center center",
-        // markers:true,
+        // markers:false,
         scrub:1
         // markers:false,
     }
