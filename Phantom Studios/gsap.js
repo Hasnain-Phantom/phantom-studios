@@ -28,6 +28,7 @@ gsap.from(".menu-icon",{
 gsap.from("#nav",{
     duration: 1,
     opacity:-3,
+    ease: "power1.out",
     y:50
 })
 var t1=gsap.timeline();
@@ -36,12 +37,14 @@ t1
 .from("#texts1",{
     duration: 1,
     opacity:-3,
+    ease: "power1.out",
 
     y:50
 })
+
 .from("#phan", {
     duration: 1,
-    opacity:-3,
+    opacity:-2,
     ease: "power1.out",
     scrub: 1,
     y:50
@@ -50,12 +53,13 @@ t1
 
 .from("#studio", {
     duration: 1,
-    opacity:-3,
+    opacity:-2,
     ease: "power1.out",
     scrub: 1,
     y:40
 
 });
+
 
 
 
@@ -191,7 +195,7 @@ overlays1.addEventListener("mouseenter",function(){
     gsap.to(cursor,{
         scale:5
     })
-      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+      cursor.style.backgroundImage = "url('media/orbital.jpg')";
 })
 overlays1.addEventListener("mouseleave",function(){
         cursor.innerHTML=""
@@ -214,7 +218,7 @@ overlays2.addEventListener("mouseenter",function(){
     gsap.to(cursor,{
         scale:5
     })
-      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+      cursor.style.backgroundImage = "url('media/ben.jpg')";
 })
 overlays2.addEventListener("mouseleave",function(){
         cursor.innerHTML=""
@@ -237,7 +241,7 @@ overlays3.addEventListener("mouseenter",function(){
     gsap.to(cursor,{
         scale:5
     })
-      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+      cursor.style.backgroundImage = "url('media/arc.jpg')";
 })
 overlays3.addEventListener("mouseleave",function(){
         cursor.innerHTML=""
@@ -260,7 +264,7 @@ overlays4.addEventListener("mouseenter",function(){
     gsap.to(cursor,{
         scale:5
     })
-      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+      cursor.style.backgroundImage = "url('media/munch.jpg')";
 })
 overlays4.addEventListener("mouseleave",function(){
         cursor.innerHTML=""
@@ -283,7 +287,7 @@ overlays5.addEventListener("mouseenter",function(){
     gsap.to(cursor,{
         scale:5
     })
-      // cursor.style.backgroundImage = "url('media/img2.jpg')";
+      cursor.style.backgroundImage = "url('media/kover.jpg')";
 })
 overlays5.addEventListener("mouseleave",function(){
         cursor.innerHTML=""

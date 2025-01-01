@@ -52,14 +52,8 @@
         }
 
         #companies {
-            padding-top: 3%;
-            border-bottom: 0px solid rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            height: 50%;
-   
-            align-items: center;
-            text-align: center;
-            padding-top: 1%;
+            padding-top: 8%;
+            border-bottom: 0px solid black;
         }
 
         .imgs {
@@ -90,6 +84,14 @@
             background-image: url();
         }
 
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
 
         label {
             display: block;
@@ -114,22 +116,18 @@
         }
 
         button {
-            background-color: orangered;
+            background-color: #007BFF;
             color: #fff;
             border: none;
             padding: 12px 20px;
-            font-size: 25px;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 4px;
             transition: background-color 0.3s ease;
-            width: 15%;
-            height: 7%;
-            border: 2px solid black;
         }
 
         button:hover {
-            background-color: orangered;
-            color: white;
+            background-color: #0056b3;
         }
 
         /* Placeholder Styles */
@@ -138,39 +136,6 @@
             color: #888;
             font-style: italic;
         }
-
-      
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 60%;
-            margin-left: 10%;        
-        }
-    label{
-        font-size: 20px;
-    }
-input{
-    border: 2px orangered;
-}
-#fill_heading{
-  
-    width: 40%;
-    height: 50%;
-    font-size: 30px;
-    padding-left: 3%;
-    padding-top: 1%;
-
-    
-}
-#form_div{
-
-            display: flex;
-            margin-top: 7%;
-            margin-bottom: 7%;
-        }
-
     </style>
 </head>
 
@@ -210,29 +175,29 @@ input{
         <div id="nav" class="navbar  fixed top-0 bg-black h-13 z-10 w-full pt-4 text-black">
             <nav class="flex justify-around ">
 
-                <div id="logo "><a href="index.html">PHANTOM STUDIO'S</a></div>
+                <div id="logo ">PHANTOM STUDIO'S</div>
                 <div id="menuitems" class="flex gap-8 ">
-                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out"><a href="index.html">About us</a>
+                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">About us
                     </div>
-                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">
-                        <a href="work.html"> Services</a> 
+                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out"><a
+                            href="servies.html">Services</a>
                     </div>
                     <div
                         class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out text-black">
                         <a href="work.html">Work</a>
                     </div>
-                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out"><a href="index.html">Vision</a>
+                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Vision
                     </div>
-                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out"><a href="index.html">Master
-                        Classes</a>
+                    <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out">Master
+                        Classes
                     </div>
                     <div class="menuitem hover:border-b-4 border-black transition-all duration-200 ease-in-out"><a
                             href="contactus.html">Contact Us</a>
                     </div>
                 </div>
                 <div class="right-menu flex gap-8">
-                    <div class="side-menu hover:border-b-4 border-black transition-all duration-100 ease-in-out"><a href="contactus.html">Work
-                        with us</a>
+                    <div class="side-menu hover:border-b-4 border-black transition-all duration-100 ease-in-out">Work
+                        with us
                     </div>
                     <div
                         class="menu-icon laptop-menu-icon hover:border-b-4 border-black transition-all duration-100 ease-in-out">
@@ -245,33 +210,27 @@ input{
 
     <div id="companies">
         <marquee scrollamount="20">
-            <div id="comapny_child" class="text-[300px]">
-            WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US WORK WITH US
+            <div id="comapny_child" class="text-[70px]">
+                SERVICES
             </div>
         </marquee>
     </div>
-    <div id="form_div">
-        <div id="fill_heading">
-            Share your vision with us and let’s turn your project into reality!
+
+    <div id="serv">
+        <div id="ser1" class="sert flex gap-8 m-[10px]">
+            <div class="ser1 ser w-[50vw] h-[50vh] bg-black"></div>
+            <div class="ser1 ser w-[50vw] h-[50vh] bg-black"></div>
         </div>
-
-
-        <form action="sql.php" method="post">
-            <label for="name">First Name:</label>
-            <input type="text" name="name" id="name" required placeholder="Enter your first name">
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required placeholder="Enter your email">
-
-            <label for="company_name">Company Name:</label>
-            <input type="text" name="company_name" id="company_name" placeholder="Enter your company name">
-
-            <label for="tell_us">Tell us about the project (scope, timeline, budget):</label>
-            <textarea name="tell_us" id="tell_us" required placeholder="Describe your project"></textarea>
-<br><br>
-            <button type="submit">Submit</button>
-        </form>
+        <div id="ser2" class="sert flex  gap-8 m-[10px]">
+            <div class="ser2 ser w-[50vw] h-[50vh] bg-black"></div>
+            <div class="ser2 ser w-[50vw] h-[50vh] bg-black"></div>
+        </div>
+        <div id="ser3" class="sert flex  gap-8 m-[10px]">
+            <div class="ser3 ser w-[50vw] h-[50vh] bg-black"></div>
+            <div class="ser3 ser w-[50vw] h-[50vh] bg-black"></div>
+        </div>
     </div>
+
 
     <div id="footer" class="h-screen flex bg-black text-white">
         <div id="footer_left" style="width: 40%; font-size: 18px; padding-left: 4%;"
@@ -289,7 +248,7 @@ input{
                 <div>FACEBOOK</div>
             </div>
             <div id="footer_second" style="height: 40%; font-size: 5vw;">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGjMPsCqnZwBTPJZZXKVwrdlVRFLpNjqLTTfsgpnxwgGkhxfTmwjhzRFJttMZCRxVlrS">    PHANTOM@STUD.COM </a>
+                PHANTOM@STUD.COM
                 <hr>
             </div>
             <div id="footer_third" class="flex justify-between my-[30px]" style="height: 30%;">
@@ -340,6 +299,7 @@ color: rgb(255, 255, 255); font-family: system-ui, -apple-system, BlinkMacSystem
                 scrub: 1
             },
         });
+
         gsap.from(".menu-icon", {
             x: 500,
             scrollTrigger: {
@@ -367,6 +327,11 @@ color: rgb(255, 255, 255); font-family: system-ui, -apple-system, BlinkMacSystem
                 // pin:true
             }
         })
+        gsap.from(".sert", {
+            opacity: 0,
+            strgger: 1,
+            duration: 2
+        });
     </script>
     <script src="script.js"></script>
 </body>
